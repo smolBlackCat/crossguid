@@ -27,6 +27,7 @@ THE SOFTWARE.
 #ifdef GUID_ANDROID
 #include <thread>
 #include <jni.h>
+#include <cstdint>
 #endif
 
 #include <functional>
