@@ -27,9 +27,9 @@ THE SOFTWARE.
 #ifdef GUID_ANDROID
 #include <thread>
 #include <jni.h>
-#include <cstdint>
 #endif
 
+#include <cstdint>
 #include <functional>
 #include <iostream>
 #include <array>
@@ -55,7 +55,7 @@ public:
 
 	explicit Guid(std::string_view fromString);
 	Guid();
-	
+
 	Guid(const Guid &other) = default;
 	Guid &operator=(const Guid &other) = default;
 	Guid(Guid &&other) = default;
@@ -108,7 +108,7 @@ namespace details
 {
 	template <typename...> struct hash;
 
-	template<typename T> 
+	template<typename T>
 	struct hash<T> : public std::hash<T>
 	{
 		using std::hash<T>::hash;
